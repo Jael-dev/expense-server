@@ -22,7 +22,7 @@ app.listen(port, () => {
     console.log("Hello, you are listening to port" + port)
 })
 
-app.get('/', (res, req) => console.log(res.send("Welcome to our web server")))
+app.get('/', (req, res) => console.log(res.send("Welcome to our web server")))
 
 // a. GET /expenses to retrieve all data from the db
 
